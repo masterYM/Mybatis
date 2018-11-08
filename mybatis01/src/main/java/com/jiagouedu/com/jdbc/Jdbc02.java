@@ -16,7 +16,7 @@ public class Jdbc02 {
 
     public static void main(String[] args) {
       User c=new User();
-      c.setUsername("wukong");
+      c.setUsername("duli");
       c.setAge(18);
       insert(c);
       //查询

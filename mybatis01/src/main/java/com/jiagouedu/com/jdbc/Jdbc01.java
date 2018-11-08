@@ -11,17 +11,18 @@ public class Jdbc01 {
 
   public static void main(String[] args) {
 
-    insert("wukong",12);
+    insert("好强",18,"18875021111","很帅");
   }
 
-  static void insert(String name,int age)
+  static void insert(String name,int age,String phone,String desc)
   {
-    String sql="insert into user(username,age) value(?,?)";
+    String sql="insert into user(username,age,phone) value(?,?,?)";
     Connection conn=DbUtil.open();
     try {
       PreparedStatement pstmt=(PreparedStatement) conn.prepareStatement(sql);
       pstmt.setString(1,name);
       pstmt.setInt(2,age);
+      pstmt.setString(3,phone);
       pstmt.executeUpdate();
     } catch (SQLException e) {
       e.printStackTrace();

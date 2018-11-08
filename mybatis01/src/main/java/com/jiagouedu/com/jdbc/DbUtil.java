@@ -15,9 +15,9 @@ public class DbUtil {
 
     static {
       driver="com.mysql.jdbc.Driver";//需要的数据库驱动
-      url="jdbc:mysql://localhost:3306/tl-vip";//数据库名路径
+      url="jdbc:mysql://localhost:3306/mybatis";//数据库名路径
       username="root";
-      password="root";
+      password="123456";
     }
     public static Connection open()
     {

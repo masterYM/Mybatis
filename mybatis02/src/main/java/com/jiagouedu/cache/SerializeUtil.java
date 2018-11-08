@@ -7,8 +7,8 @@ import java.io.ObjectOutputStream;
 
 public class SerializeUtil {
   public static byte[] serialize(Object object) {
-    ObjectOutputStream oos = null;
-    ByteArrayOutputStream baos = null;
+    ObjectOutputStream oos;
+    ByteArrayOutputStream baos;
     try {
       // 序列化
       baos = new ByteArrayOutputStream();
@@ -23,7 +23,7 @@ public class SerializeUtil {
   }
 
   public static Object unserialize(byte[] bytes) {
-    ByteArrayInputStream bais = null;
+    ByteArrayInputStream bais;
     try {
       // 反序列化
       bais = new ByteArrayInputStream(bytes);
