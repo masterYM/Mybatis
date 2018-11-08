@@ -7,5 +7,5 @@ import java.sql.SQLException;
 
 public interface ResultSetHandler {
 
-  public   <T> T handle(PreparedStatement pstmt, MapperMethod mapperMethod) throws Exception;
+  <T> T handle(PreparedStatement pstmt, MapperMethod mapperMethod) throws Exception;
 }

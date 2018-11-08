@@ -13,6 +13,6 @@ public interface UserMapper {
      @Result(property = "desc",column = "desc")
    })
   @Select("select id,username,age,phone,`desc` from user where id=#{id}")
-  public User selectUser(Integer id);
+   User selectUser(Integer id);
 
 }
