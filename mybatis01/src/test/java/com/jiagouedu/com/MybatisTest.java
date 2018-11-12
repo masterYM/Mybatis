@@ -21,7 +21,7 @@ public class MybatisTest {
     InputStream inputStream = Resources.getResourceAsStream(resource);
     SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
     SqlSession sqlSession = sqlSessionFactory.openSession();
-    User user = sqlSession.selectOne("com.jiagouedu.mybatis.mapper.UserMapper.selectUser", 1);
+    User user = sqlSession.selectOne("com.jiagouedu.mybatis.UserMapper.selectUser", 1);
    log.info("user:{}",user);
 
   }
