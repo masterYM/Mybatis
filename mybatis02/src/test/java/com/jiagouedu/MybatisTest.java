@@ -19,7 +19,7 @@ public class MybatisTest {
     InputStream inputStream = Resources.getResourceAsStream(resource);
     SqlSessionFactory sqlSessionFactory =new SqlSessionFactoryBuilder().build(inputStream);
     SqlSession sqlSession = sqlSessionFactory.openSession();
-    log.info("user1：{}", (Object[]) sqlSession.selectOne("com.jiagouedu.mybatis.UserMapper.selectUser", 3));
+    log.info("user1：{}", (Object) sqlSession.selectOne("com.jiagouedu.mybatis.UserMapper.selectUser", 3));
     log.info("user2：{}", (Throwable) sqlSession.selectOne("com.jiagouedu.mybatis.UserMapper.selectUser", 3));
     sqlSession.commit();
     log.info("user3：{}", java.util.Optional.ofNullable(sqlSession.selectOne("com.jiagouedu.mybatis.UserMapper.selectUser", 3)));
