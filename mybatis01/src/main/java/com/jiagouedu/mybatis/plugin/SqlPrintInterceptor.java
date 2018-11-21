@@ -21,9 +21,11 @@ import java.util.List;
 import java.util.Properties;
 import java.util.regex.Matcher;
 
-@Intercepts
+@Intercepts//拦截器注解，声明此类是一个插件类。
         ({
-                @Signature(type = Executor.class, method = "query", args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class}),
+                @Signature(type = Executor.class,/*type 拦截的方法所属接口类型*/
+                        method = "query",//拦截的方法名称
+                        args = {MappedStatement.class, Object.class, RowBounds.class, ResultHandler.class}),//需要的参数信息
                 @Signature(type = Executor.class, method = "update", args = {MappedStatement.class, Object.class})
         })
 public class SqlPrintInterceptor implements Interceptor{
@@ -32,7 +34,7 @@ public class SqlPrintInterceptor implements Interceptor{
 
     private static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-    @Override
+    @Override//是一个对目标方法进行拦截的抽象方法
     public Object intercept(Invocation invocation) throws Throwable {
         MappedStatement mappedStatement = (MappedStatement) invocation.getArgs()[0];
         Object parameterObject = null;
@@ -59,7 +61,7 @@ public class SqlPrintInterceptor implements Interceptor{
         return result;
     }
 
-    @Override
+    @Override//作用是将拦截器插入目标对象
     public Object plugin(Object target) {
         if (target instanceof Executor) {
             return Plugin.wrap(target, this);
@@ -67,7 +69,7 @@ public class SqlPrintInterceptor implements Interceptor{
         return target;
     }
 
-    @Override
+    @Override//作用是将全局配置文件中的参数注入插件类中
     public void setProperties(Properties properties) {
     }
 
