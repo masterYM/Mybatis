@@ -71,6 +71,7 @@ public class SqlPrintInterceptor implements Interceptor{
 
     @Override//作用是将全局配置文件中的参数注入插件类中
     public void setProperties(Properties properties) {
+        String value = properties.getProperty("key");
     }
 
     private String getSql(BoundSql boundSql, Object parameterObject, Configuration configuration) {
