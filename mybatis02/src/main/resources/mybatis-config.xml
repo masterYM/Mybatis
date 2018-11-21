@@ -6,12 +6,14 @@
     <settings>
         <setting name="cacheEnabled" value="true" /><!--二级缓存 默认是关闭的 -->
     </settings>
-    <typeHandlers>
-        <typeHandler handler="com.jiagouedu.typehandlers.DateTypeHandler" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
-    </typeHandlers>
+
     <typeAliases>
         <typeAlias type="com.jiagouedu.pojo.User" alias="user"></typeAlias>
     </typeAliases>
+    <typeHandlers>
+        <typeHandler handler="com.jiagouedu.typehandlers.DateTypeHandler" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+    </typeHandlers>
+    <objectFactory type="com.jiagouedu.objectfactory.CartObjectFactory"/>
 
     <environments default="development">
         <environment id="development">
