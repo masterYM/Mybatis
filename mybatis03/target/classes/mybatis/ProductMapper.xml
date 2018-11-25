@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiagouedu.mapper.ProductMapper">
+
+    <resultMap id="productResult" type="com.jiagouedu.pojo.Product">
+        <id property="pid" column="product_id"/>
+        <result property="pname" column="product_name"/>
+        <collection property="replys" select="queryReplyByProductId" column="product_id" ofType="com.jiagouedu.pojo.Reply"/>
+
+    </resultMap>
+    <select id="queryProductInfo" parameterType="int" resultMap="productResult">
+        select
+        P.product_id as pid,
+        P.product_name as pname
+        from product P where P.product_id=#{id}
+    </select>
+
+    <select id="queryReplyByProductId" parameterType="int" resultType="com.jiagouedu.pojo.Reply">
+        select * from  reply R where R.product_id = #{productId}
+    </select>
+
+</mapper>
