@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18f83b03-2d99-413f-8c49-65aded78a404" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/pojo/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/pojo/Reply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-source" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-source" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-source/CONTRIBUTING.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-source/ISSUE_TEMPLATE.md" beforeDir="false" />
@@ -21,11 +13,7 @@
       <change beforePath="$PROJECT_DIR$/mybatis-source/src/test/java/com/jiagouedu/txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-source/src/test/java/com/jiagouedu/txt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-source/src/test/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-source/src/test/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-source/备注" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-source/备注" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis03/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis03/src/main/resources/spring-mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis03/src/test/java/com.jiagouedu/MybatisTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis03/src/test/java/com.jiagouedu/MybatisTest2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis03/target/classes/com/jiagouedu/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis03/target/classes/com/jiagouedu/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis03/target/classes/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis03/target/classes/spring-mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis03/target/test-classes/com/jiagouedu/MybatisTest2.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis03/target/test-classes/com/jiagouedu/MybatisTest2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper1.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mybatis01/target/" />
     <ignored path="$PROJECT_DIR$/mybatis02/target/" />
@@ -96,7 +84,7 @@
           <entry key="ICLA" value="1" />
           <entry key="LICENSE" value="1" />
           <entry key="NOTICE" value="1" />
-          <entry key="class" value="8" />
+          <entry key="class" value="12" />
           <entry key="cmd" value="1" />
           <entry key="dtd" value="1" />
           <entry key="gitattributes" value="1" />
@@ -114,7 +102,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="8" />
+          <entry key="CLASS" value="12" />
           <entry key="DTD" value="1" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="216" />
@@ -127,67 +115,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1203" />
+          <entry key="java" value="1205" />
           <entry key="md" value="562" />
           <entry key="txt" value="114" />
-          <entry key="xml" value="547" />
+          <entry key="xml" value="559" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1203" />
+          <entry key="JAVA" value="1205" />
           <entry key="Markdown" value="562" />
           <entry key="PLAIN_TEXT" value="114" />
           <entry key="SQL" value="3" />
-          <entry key="XML" value="544" />
+          <entry key="XML" value="556" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis02/src/test/java/com/jiagouedu/MybatisTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="55" column="26" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis02/src/main/java/com/jiagouedu/pojo/ShoppingCart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-              <folding>
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#836#837#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#936#937#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1036#1037#0" expanded="true" />
-                <element signature="e#1072#1073#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1174#1175#0" expanded="true" />
-                <element signature="e#1208#1209#0" expanded="true" />
-                <element signature="e#1246#1247#0" expanded="true" />
-                <element signature="e#1280#1281#0" expanded="true" />
-                <element signature="e#1334#1335#0" expanded="true" />
-                <element signature="e#1380#1381#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -200,26 +146,66 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper1.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="247">
+              <caret line="12" column="78" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper1.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="9" column="94" selection-start-line="9" selection-start-column="94" selection-end-line="9" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mybatis03/src/test/java/com.jiagouedu/MybatisTest2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="549">
+              <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="e#1015#1016#0" expanded="true" />
+                <element signature="e#1065#1066#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/executor/CachingExecutor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/executor/BaseExecutor.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="308" selection-start-line="308" selection-end-line="308" />
             </state>
           </provider>
         </entry>
@@ -227,32 +213,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/pojo/Reply.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis02/src/main/resources/mybatis/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="330">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -260,8 +222,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/spring-mybatis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+            <state relative-caret-position="459">
+              <caret line="36" column="81" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -345,10 +307,10 @@
         <option value="$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/pojo/Reply.java" />
         <option value="$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper.java" />
         <option value="$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper.xml" />
-        <option value="$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper1.xml" />
         <option value="$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper1.java" />
-        <option value="$PROJECT_DIR$/mybatis03/src/test/java/com.jiagouedu/MybatisTest2.java" />
         <option value="$PROJECT_DIR$/mybatis03/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/mybatis03/src/test/java/com.jiagouedu/MybatisTest2.java" />
+        <option value="$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper1.xml" />
       </list>
     </option>
   </component>
@@ -586,7 +548,7 @@
     <property name="SearchEverywhereHistoryKey" value="DefaultSqlSessionFactory&#9;PSI&#9;JAVA://org.apache.ibatis.session.defaults.DefaultSqlSessionFactory&#10;SqlSessionFactoryBuilder&#9;FILE&#9;file://D:/mygithub/mybatis/mybatis-source/src/main/java/org/apache/ibatis/session/SqlSessionFactoryBuilder.java&#10;XPathParser&#9;PSI&#9;JAVA://org.apache.ibatis.parsing.XPathParser" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543156639028" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543157343584" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-source/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -738,44 +700,44 @@
       <workItem from="1542547303208" duration="1336000" />
       <workItem from="1542807619960" duration="4821000" />
       <workItem from="1542894257270" duration="1235000" />
-      <workItem from="1543152607177" duration="3879000" />
+      <workItem from="1543152607177" duration="5045000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 12m 23s.xml">
-      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 13m 21s.xml">
-      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 14m 48s.xml">
-      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 16m 18s.xml">
-      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 18m 26s.xml">
-      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 19m 43s.xml">
-      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 22m 22s.xml">
-      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 23m 22s.xml">
-      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 24m 14s.xml">
       <configuration name="MybatisTest2.testList" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 26m 48s.xml">
       <configuration name="MybatisTest2.testList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 34m 59s.xml">
+      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 35m 27s.xml">
+      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 35m 49s.xml">
+      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 41m 12s.xml">
+      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 47m 29s.xml">
+      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 47m 58s.xml">
+      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 48m 53s.xml">
+      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisTest2_testList - 2018.11.25 at 22h 49m 22s.xml">
+      <configuration name="MybatisTest2.testList" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41057000" />
+    <option name="totallyTimeSpent" value="42223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -788,10 +750,10 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.1609808" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.1609808" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.55964327" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2419175" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34559643" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -962,10 +924,16 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mybatis03/src/test/java/com.jiagouedu/MybatisTest2.java</url>
-          <line>35</line>
+          <url>jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class</url>
+          <line>22</line>
           <properties />
-          <option name="timeStamp" value="28" />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis03/src/test/java/com.jiagouedu/MybatisTest2.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1223,38 +1191,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/executor/CachingExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/executor/BaseExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1307,6 +1243,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/pojo/Reply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="81" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/pojo/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1328,58 +1298,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/pojo/Reply.java">
+    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="247">
+          <caret line="12" column="78" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/session/defaults/DefaultSqlSessionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
           <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper.xml">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="336">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/executor/CachingExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="156">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/java/com/jiagouedu/mapper/ProductMapper1.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/executor/BaseExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+        <state relative-caret-position="156">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis03/src/test/java/com.jiagouedu/MybatisTest2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="549">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis03/src/main/resources/mybatis/ProductMapper1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="9" column="94" selection-start-line="9" selection-start-column="94" selection-end-line="9" selection-end-column="94" />
         </state>
       </provider>
     </entry>

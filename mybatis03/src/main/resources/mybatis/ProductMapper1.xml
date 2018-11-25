@@ -7,7 +7,7 @@
     <resultMap id="productResult" type="com.jiagouedu.pojo.Product">
         <id property="pid" column="product_id"/>
         <result property="pname" column="product_name"/>
-        <collection property="replys" ofType="com.jiagouedu.pojo.Reply" resultMap="queryProductInfo"/>
+        <collection property="replys" ofType="com.jiagouedu.pojo.Reply" resultMap="replyResult"/>
 
     </resultMap>
 
@@ -19,10 +19,7 @@
     </resultMap>
 
     <select id="queryProductInfo" parameterType="int" resultMap="productResult">
-        select
-        P.product_id as pid,
-        P.product_name as pname
-        from product P where P.product_id=#{id}
+        select * from product where product_id=#{value}
     </select>
 
 
