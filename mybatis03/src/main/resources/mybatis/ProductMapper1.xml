@@ -19,7 +19,7 @@
     </resultMap>
 
     <select id="queryProductInfo" parameterType="int" resultMap="productResult">
-        select * from product where product_id=#{value}
+        select * from product P left  join  reply R on  R.product_id = P.product_id where P.product_id=#{value}
     </select>
 
 

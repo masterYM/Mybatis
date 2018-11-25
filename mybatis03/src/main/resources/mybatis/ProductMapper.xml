@@ -12,8 +12,8 @@
     </resultMap>
     <select id="queryProductInfo" parameterType="int" resultMap="productResult">
         select
-        P.product_id as pid,
-        P.product_name as pname
+        P.product_id ,
+        P.product_name
         from product P where P.product_id=#{id}
     </select>
 
