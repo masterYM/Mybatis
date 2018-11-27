@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+  
+<mapper namespace="com.jiagouedu.mapper.CustomerMapper">
+
+<!--resultMap-->
+	<resultMap type="com.jiagouedu.pojo.BatchItem" id="BatchInfoMap">
+		<id column="batch_id" property="batch_id"/>
+		<result column="cus_id" property="cus_id"/>
+		<result column="number" property="number"/>
+		<result column="createtime" property="createtime" javaType="java.util.Date"/>
+		<result column="note" property="note"/>
+		<association property="customer" javaType="com.jiagouedu.pojo.Customer">
+			<id column="cus_id" property="cus_id"/>
+			<result column="username" property="username"/>
+			<result column="acno" property="acno"/>
+			<result column="gender" property="gender"/>
+			<result column="phone" property="phone"/>
+		</association>
+	</resultMap>
+
+	<select id="findBatchCustomerToMap" resultMap="BatchInfoMap">
+        SELECT
+		  BATCH.*,
+		  CUSTOMER.username,
+		  CUSTOMER.acno
+		FROM
+		  BATCH,
+		  CUSTOMER
+		WHERE BATCH.cus_id = CUSTOMER.cus_id
+    </select>
+<!--resultType-->
+	<select id="findBatchCustomer" resultType="com.jiagouedu.pojo.BatchCustomer">
+        SELECT
+		  BATCH.*,
+		  CUSTOMER.username,
+		  CUSTOMER.acno
+		FROM
+		  BATCH,
+		  CUSTOMER
+		WHERE BATCH.cus_id = CUSTOMER.cus_id
+    </select>
+    <!-- 查询用户 -->
+    <select id="findCustomerById" parameterType="int" resultType="com.jiagouedu.pojo.Customer">
+      SELECT * FROM CUSTOMER WHERE cus_id=#{cus_id}
+    </select>  
+    <!-- 新增用户 -->   
+	<insert id="insertCustomer" parameterType="com.jiagouedu.pojo.Customer">
+    	INSERT INTO CUSTOMER(username,acno,gender,phone) 
+    		value(#{username},#{acno},#{gender},#{phone})  
+	</insert>
+	<!-- 删除用户 -->  
+	<delete id="deleteCustomer" parameterType="java.lang.Integer">  
+	    DELETE FROM CUSTOMER WHERE cus_id=#{cus_id}
+	</delete>  
+    <!-- 修改用户 -->  
+    <update id="updateCustomerAcNo" parameterType="com.jiagouedu.pojo.Customer" >
+        UPDATE CUSTOMER SET acno = #{acno} WHERE cus_id=#{cus_id}
+    </update>
+</mapper>  
