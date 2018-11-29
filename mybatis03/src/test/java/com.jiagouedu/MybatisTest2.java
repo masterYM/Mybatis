@@ -30,6 +30,35 @@ public class MybatisTest2 {
   private CustomerMapper customerMapper;
 
   @Test
+  public void testfindBatchAndBatchDetail() throws Exception{
+
+
+
+    //调用userMapper的方法
+    BatchItem batchItem=customerMapper.findBatchAndBatchDetail(1);
+    if(batchItem!=null){
+      SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+      Customer customer = batchItem.getCustomer();//取出该批次的用户信息
+      //取出该批次订购的理财产品信息
+      List<BatchDetail> batchDetails = batchItem.getBatchDetails();
+      System.out.println("卡号为"+customer.getAcno()+"的名为"
+              +customer.getUsername()+"的客户:\n于"
+              +sdf.format(batchItem.getCreatetime())+"采购了批次号为"
+              +batchItem.getNumber()+"的一批理财产品，详情如下：");
+      BatchDetail batchDetail = null;
+      if(batchDetails!=null){
+        for (int i = 0; i < batchDetails.size(); i++) {
+          batchDetail = batchDetails.get(i);
+          System.out.println("id为"+batchDetail.getProduct_id()
+                  +"的理财产品"+batchDetail.getProduct_num()+"份");
+        }
+
+      }
+
+    }
+  }
+
+  @Test
   public void testBatchCustomerToMap() throws Exception{
 
     //调用userMapper的方法

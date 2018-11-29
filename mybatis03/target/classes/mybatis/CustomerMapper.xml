@@ -21,6 +21,31 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		</association>
 	</resultMap>
 
+	<resultMap type="com.jiagouedu.pojo.BatchItem" id="BatchAndBatchDetailResultMap"
+			   extends="BatchInfoMap">
+		<collection property="batchDetails" ofType="com.jiagouedu.pojo.BatchDetail">
+			<!-- id:订单明细的唯一标识 -->
+			<id column="id" property="id"/>
+			<result column="batch_id" property="batch_id"/>
+			<result column="product_id" property="product_id"/>
+			<result column="product_num" property="product_num"/>
+		</collection>
+	</resultMap>
+
+	<select id="findBatchAndBatchDetail" resultMap="BatchAndBatchDetailResultMap">
+        SELECT
+		  BATCH.*,
+		  CUSTOMER.username,
+		  CUSTOMER.acno,
+		  BATCHDETAIL.product_id,
+		  BATCHDETAIL.product_num
+		FROM
+		  BATCH,
+		  CUSTOMER,
+		  BATCHDETAIL
+		WHERE BATCH.cus_id = CUSTOMER.cus_id AND BATCHDETAIL.batch_id=BATCH.batch_id and BATCH.batch_id = #{value}
+    </select>
+
 	<select id="findBatchCustomerToMap" resultMap="BatchInfoMap">
         SELECT
 		  BATCH.*,
