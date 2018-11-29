@@ -63,6 +63,25 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		</collection>
 	</resultMap>
 
+	<!-- 延迟加载的resultMap -->
+	<resultMap id="BatchUserLazyLoadingResultMap" type="com.jiagouedu.pojo.BatchItem">
+		<!-- 对订单信息进行映射配置 -->
+		<id column="batch_id" property="batch_id"/>
+		<result column="cus_id" property="cus_id"/>
+		<result column="number" property="number"/>
+		<result column="createtime" property="createtime" javaType="java.util.Date"/>
+		<result column="note" property="note"/>
+		<!-- 实现延迟加载用户信息 -->
+		<association property="customer" javaType="com.jiagouedu.pojo.Customer"
+					 select="findCustomerById" column="cus_id">
+		</association>
+	</resultMap>
+
+	<select id="findBatchUserLazyLoading" resultMap="BatchUserLazyLoadingResultMap">
+        SELECT * FROM BATCH
+    </select>
+
+
 	<select id="findUserAndProducts" resultMap="UserAndProductsResultMap">
         SELECT
 		  BATCH.*,

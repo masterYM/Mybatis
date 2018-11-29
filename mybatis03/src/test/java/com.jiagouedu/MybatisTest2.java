@@ -30,6 +30,22 @@ public class MybatisTest2 {
   private CustomerMapper customerMapper;
 
   @Test
+  public void testFindBatchCustomerLazyLoading() throws Exception{
+
+    //调用userMapper的方法，获取所有订单信息(未加载关联的用户信息)
+    List<BatchItem> batchItemList=customerMapper.findBatchUserLazyLoading(1);
+    BatchItem batchItem = null;
+    Customer customer = null;
+    for (int i = 0; i < batchItemList.size(); i++) {
+      batchItem = batchItemList.get(i);
+      System.out.println("订单编号："+batchItem.getNumber());
+      //执行getCustomer时才会去查询用户信息，这里实现了延迟加载
+      customer=batchItem.getCustomer();
+      System.out.println("订购用户姓名:"+customer.getUsername());
+    }
+  }
+
+  @Test
   public void testfindCustomerAndProducts() throws Exception{
 
     //调用userMapper的方法，获取所有用户信息(以及从属批次信息)
