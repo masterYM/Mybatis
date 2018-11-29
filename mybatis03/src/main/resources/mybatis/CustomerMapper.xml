@@ -32,6 +32,57 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		</collection>
 	</resultMap>
 
+
+	<resultMap type="com.jiagouedu.pojo.Customer" id="UserAndProductsResultMap">
+		<!-- 客户信息 -->
+		<result column="username" property="username"/>
+		<result column="acno" property="acno"/>
+
+		<!--批次订单信息，一个客户对应多个订单-->
+		<collection property="batchList" ofType="com.jiagouedu.pojo.Batch">
+			<id column="batch_id" property="batch_id"/>
+			<result column="cus_id" property="cus_id"/>
+			<result column="number" property="number"/>
+			<result column="createtime" property="createtime" javaType="java.util.Date"/>
+			<result column="note" property="note"/>
+
+			<collection property="batchDetials" ofType="com.jiagouedu.pojo.BatchDetail">
+				<!-- id:订单明细的唯一标识 -->
+				<id column="id" property="id"/>
+				<result column="batch_id" property="batch_id"/>
+				<result column="product_id" property="product_id"/>
+				<result column="product_num" property="product_num"/>
+
+				<association property="finacialProduct" javaType="com.jiagouedu.pojo.FinacialProduct">
+					<id column="product_id" property="id"/>
+					<result column="name" property="name"/>
+					<result column="price" property="price"/>
+					<result column="detail" property="detail"/>
+				</association>
+			</collection>
+		</collection>
+	</resultMap>
+
+	<select id="findUserAndProducts" resultMap="UserAndProductsResultMap">
+        SELECT
+		  BATCH.*,
+		  CUSTOMER.username,
+		  CUSTOMER.acno,
+		  BATCHDETAIL.product_id,
+		  BATCHDETAIL.product_num,
+		  FINACIAL_PRODUCTS.name,
+		  FINACIAL_PRODUCTS.detail,
+		  FINACIAL_PRODUCTS.price
+		FROM
+		  BATCH,
+		  CUSTOMER,
+		  BATCHDETAIL,
+		  FINACIAL_PRODUCTS
+		WHERE BATCH.cus_id = CUSTOMER.cus_id
+		AND BATCHDETAIL.batch_id=BATCH.batch_id
+		AND FINACIAL_PRODUCTS.product_id=BATCHDETAIL.product_id;
+    </select>
+
 	<select id="findBatchAndBatchDetail" resultMap="BatchAndBatchDetailResultMap">
         SELECT
 		  BATCH.*,

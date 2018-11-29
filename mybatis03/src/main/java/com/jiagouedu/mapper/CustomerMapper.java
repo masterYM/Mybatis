@@ -15,6 +15,7 @@ public interface CustomerMapper {
     List<BatchCustomer> findBatchCustomer(int id) throws Exception;
     List<BatchItem> findBatchCustomerToMap(int id) throws Exception;
     BatchItem findBatchAndBatchDetail(int id) throws Exception;
+    List<Customer> findUserAndProducts(int id) throws Exception;
 
 
      void insertCustomer(Customer customer) throws Exception;
